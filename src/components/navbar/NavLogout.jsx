@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from '../../assets/galu-logo.png'
 import ThemeSwitch from "./theme";
 
@@ -10,10 +11,14 @@ export default function NavLogout({theme, setTheme}){
             </div>
 
             
-            <div className="w-40 flex justify-around mr-8" >
+            <div className="w-1/4 flex justify-around mr-8" >
             <ThemeSwitch theme={theme} setTheme={setTheme}/>
-            <p className={theme? "text-blue-900" : "text-zinc-50"}>Login</p>
-            <p className={theme? "text-blue-900" : "text-zinc-50"}>Sign in</p>
+            <Link to='/login'>
+            <p className={theme? "text-blue-900" : "text-zinc-50"}>Ingresar</p>
+            </Link>
+            <Link to='/register'>
+            <p className={theme? "text-blue-900" : "text-zinc-50"}>Registrarse</p>
+            </Link>
             </div>
         </div>
     )
