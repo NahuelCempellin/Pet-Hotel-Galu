@@ -42,7 +42,7 @@ export default function Login () {
             <div className="relative flex flex-col w-full min-w-0 mb-6 break-words border-0 rounded-lg shadow-lg">
             <div>
                 <h1 className={`text-3xl font-bold ${theme? "text-blue-900" : "text-zinc-50"} text-center mt-5`}>
-                  !Bienvenido!
+                  ¡Bienvenido!
                 </h1>
               </div>
               <div className="px-6 py-6 mb-0 rounded-t">
