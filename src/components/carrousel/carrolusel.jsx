@@ -22,7 +22,7 @@ export default function Carrousel(){
             <div className="item-box">
                 <FaPlay/>
             </div>
-          <p>See the activities of your pets from your cell phone</p>
+          <p>Vea las actividades de tus mascotas desde su celular</p>
             </div>
         </li>
         <li className="anim2">
@@ -30,7 +30,7 @@ export default function Carrousel(){
         <div className="item-box">
                 <BsClockHistory/>
             </div>
-          <p>24 hour attention to our guests</p>
+          <p>Atención 24 horas a nuestros invitados.</p>
         </div>
         </li>
         <li className="anim3">
@@ -38,7 +38,7 @@ export default function Carrousel(){
             <div className="item-box">
                 <GiDogBowl/>
             </div>
-          <p>Walks, meals, custom diets, recreational games and more!</p>
+          <p>Paseos, comidas, dietas personalizadas, juegos recreativos y más!</p>
             </div>
         </li>
         <li className="anim4">
@@ -46,7 +46,7 @@ export default function Carrousel(){
             <div className="item-box">
                 <CiBaseball/>
             </div>
-          <p >Interactive games and activities with other guests</p>
+          <p >Juegos interactivos y actividades con otros huéspedes.</p>
             </div>
         </li>
         <li className="anim5">
@@ -54,7 +54,7 @@ export default function Carrousel(){
             <div className="item-box">
                 <FaSwimmingPool/>
             </div>
-          <p>Dog bath, spa, pool and much more!</p>
+          <p>Baño para perros, spa, piscina y mucho más!</p>
             </div>
         </li>
       </ul>
