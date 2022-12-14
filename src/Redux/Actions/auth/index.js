@@ -5,6 +5,8 @@ export const SIGN_IN = 'SIGN_IN'
 export const SIGN_OUT = 'SIGN_OUT'
 export const RECOVER_PASSWORD = 'RECOVER_PASSWORD'
 
+export const THEME='THEME'
+
 export function signUp (obj) {
   return (dispatch) => {
     toast.promise(axios.post('https://pethotel-production.up.railway.app/api/user/signup', obj), {
@@ -55,4 +57,14 @@ export function signIn (obj, router) {
         toast.error(err)
       })
   }
+}
+
+
+export function ThemeHandler(){
+  return function(dispatch){
+    dispatch({
+      type: THEME
+    })
+  }
+   
 }

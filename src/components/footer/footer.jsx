@@ -1,10 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import{GrFacebookOption} from 'react-icons/gr'
 import {FaInstagram} from 'react-icons/fa'
 import {CiTwitter} from 'react-icons/ci'
 
 
-export default function Footer({theme,setTheme}){
+export default function Footer(){
+    const{theme}=useSelector(state=>state)
     
     return(
         <div className="mt-36 items-center w-full"> 

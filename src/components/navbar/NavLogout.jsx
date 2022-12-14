@@ -1,18 +1,22 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/galu-logo.png'
 import ThemeSwitch from "./theme";
 
-export default function NavLogout({theme, setTheme}){
+export default function NavLogout(){
+    const{theme}= useSelector(state=> state)
     return(
         <div className="border-red-800 flex w-full items-center justify-between p-3">
             <div className="h-16 w-32  ml-8">
+                <Link to={'/'}>
                 <img  alt="galu" src={Logo} className='w-full'/>
+                </Link>
             </div>
 
             
             <div className="w-1/4 flex justify-around mr-8" >
-            <ThemeSwitch theme={theme} setTheme={setTheme}/>
+            <ThemeSwitch/>
             <Link to='/login'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Ingresar</p>
             </Link>

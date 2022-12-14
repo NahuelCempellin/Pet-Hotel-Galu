@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from "react";
+import React from "react";
 import '../carrousel/carrousel.css'
 import {FaPlay,FaSwimmingPool} from 'react-icons/fa'
 import {BsClockHistory} from 'react-icons/bs'
@@ -7,19 +7,9 @@ import {CiBaseball} from 'react-icons/ci'
 
 
 
-export default function Carrousel(theme){
+export default function Carrousel(){
     
-  const[light,setLight]= useState(false)
   
-  useEffect(()=>{
-    if(theme === true){
-      setLight(true)
-      
-    }else{
-      setLight(false)
-      
-    }
-  },[theme])
 
     return(
         <div>

@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import Galu from '../../assets/galu-logo.png'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { signUp } from '../../Redux/Actions/auth'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import NavLogout from '../../components/navbar/NavLogout'
+import Footer from '../../components/footer/footer'
 export default function Register () {
   const dispatch = useDispatch()
+  const{theme}= useSelector(state=> state)
   const [registerForm, setRegisterForm] = useState({
     fullname: '',
     email: '',
@@ -31,27 +34,28 @@ export default function Register () {
   }
   return (
     <>
-      <div className="w-full h-full px-4 mx-auto">
+      <div className={`w-full h-full px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"}`}>
       <ToastContainer/>
+      <NavLogout/>
         <div className="flex items-center content-center justify-center h-full flex-col">
           <div className="w-full px-4 lg:w-1/4 flex flex-col justify-center">
-            <img src={Galu} alt="galu logo" />
+            {/* <img src={Galu} alt="galu logo" /> */}
           </div>
           <div className="w-full px-4 lg:w-6/12">
-            <div className="relative flex flex-col w-full min-w-0 mb-6  border-0 rounded-lg shadow-lg bg-[#1b3f9c]">
+            <div className="relative flex flex-col w-full min-w-0 mb-6  border-0 rounded-lg shadow-lg ">
               <div>
-                <h1 className=' text-3xl font-bold text-white text-center mt-5'>
+                <h1 className={`text-3xl font-bold ${theme? "text-blue-900" : "text-zinc-50"} text-center mt-5`}>
                   Regístrate
                 </h1>
               </div>
               <div className="px-6 py-6 mb-0 rounded-t">
-                <hr className="mt-6 border-b-1 border-blueGray-300" />
+                <hr className={` ${theme? "border-blue-900" : "border-orange-500"}`}  />
               </div>
               <div className="flex-auto px-4 py-10 pt-0 lg:px-10">
                 <form onSubmit={(e) => handleSubmit(e)}>
                   <div className="relative w-full mb-3">
                     <label
-                      className="block mb-2 text-xs font-bold uppercase text-white"
+                      className={`block mb-2 text-xs font-bold uppercase ${theme? "text-blue-900" : "text-zinc-50"}`}
                       htmlFor=""
                     >
                       Nombre
@@ -66,7 +70,7 @@ export default function Register () {
 
                   <div className="relative w-full mb-3">
                     <label
-                      className="block mb-2 text-xs font-bold uppercase text-white"
+                      className={`block mb-2 text-xs font-bold uppercase ${theme? "text-blue-900" : "text-zinc-50"}`}
                       htmlFor="grid-password"
                     >
                       Email
@@ -82,7 +86,7 @@ export default function Register () {
 
                   <div className="relative w-full mb-3">
                     <label
-                      className="block mb-2 text-xs font-bold uppercase text-white"
+                      className={`block mb-2 text-xs font-bold uppercase ${theme? "text-blue-900" : "text-zinc-50"}`}
                       htmlFor="grid-password"
                     >
                       Contraseña
@@ -98,21 +102,21 @@ export default function Register () {
 
                   <div className=" w-full mb-3">
                     <label
-                      className="block mb-2 text-xs font-bold uppercase text-white"
+                      className={`block mb-2 text-xs font-bold uppercase ${theme? "text-blue-900" : "text-zinc-50"}`}
                     >
                       Numero de telefono
                     </label>
                     <input
                       type="number"
                       autoComplete='on'
-                      className="w-full px-3 py-3 text-sm bg-white  rounded shadow"
+                      className="w-full px-3 py-3 text-sm bg-white  rounded shadow border-0"
                       placeholder="Numero de telefono"
                       onChange={(e) => setRegisterForm({ ...registerForm, phoneNumber: e.target.value })}
                     />
                   </div>
                   <div className="relative w-full mb-3">
                     <label
-                      className="block mb-2 text-xs font-bold uppercase text-white"
+                      className={`block mb-2 text-xs font-bold uppercase ${theme? "text-blue-900" : "text-zinc-50"}`}
                       htmlFor="grid-password"
                     >
                       Cedula
@@ -127,7 +131,7 @@ export default function Register () {
                   </div>
                   <div className="relative w-full mb-3">
                     <label
-                      className="block mb-2 text-xs font-bold uppercase text-white"
+                      className={`block mb-2 text-xs font-bold uppercase ${theme? "text-blue-900" : "text-zinc-50"}`}
                       htmlFor="grid-password"
                     >
                       Dirección
@@ -146,9 +150,9 @@ export default function Register () {
                       <input
                         id="customCheckLogin"
                         type="checkbox"
-                        className="w-5 h-5 ml-1 transition-all duration-150 ease-linear border-0 rounded form-checkbox text-blueGray-700"
+                        className="w-5 h-5 ml-1 transition-all duration-150 ease-linear border-0 rounded form-checkbox text-blueGray-700 shadow"
                       />
-                      <span className="ml-2 text-sm font-semibold text-white">
+                      <span className={`ml-2 text-sm  font-semibold ${theme? "text-blue-900" : "text-zinc-50"}`}>
                         Acepto los terminos{' '}
                         <a
                           href="#pablo"
@@ -163,7 +167,7 @@ export default function Register () {
 
                   <div className="mt-6 text-center">
                   <button
-                      className="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none bg-[#FA965A] active:bg-[#eb6515] hover:shadow-lg focus:outline-none"
+                      className="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none bg-orange-500 active:bg-[#eb6515] hover:shadow-lg focus:outline-none"
                       type="submit"
                     >
                       Crea tu cuenta
@@ -174,6 +178,7 @@ export default function Register () {
             </div>
           </div>
         </div>
+      <Footer/>
       </div>
     </>
   )
