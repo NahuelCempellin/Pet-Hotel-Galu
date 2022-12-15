@@ -4,6 +4,8 @@ import ReservasCard from "../../components/cardsReservas/card-reservas";
 import Footer from "../../components/footer/footer";
 import Nav2 from "../../components/navbar/Nav2";
 import StreamCard from "../../components/streamCard/stream-card";
+import {FaPaw} from 'react-icons/fa'
+import ofice from '../../assets/D1.jpg'
 
 
 export default function Home(){
@@ -22,6 +24,10 @@ export default function Home(){
             <div className="flex p-5 items-center justify-around">
                 <ReservasCard/>
                 <StreamCard/>
+                
+            </div>
+            <div className="flex justify-end w-full">
+                <button className="bg-orange-500 text-white w-60 rounded-lg flex items-center justify-center p-4">Ver Stream <FaPaw className="ml-3"/></button>
             </div>
             <Footer/>
             </div>
