@@ -18,10 +18,10 @@ export default function Nav2(){
             
             <div className="w-2/4 flex justify-around mr-8" >
             <ThemeSwitch/>
-            <Link to='/login'>
+            <Link to='/home'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Home</p>
             </Link>
-            <Link to='/register'>
+            <Link to='/stream'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Stream</p>
             </Link>
             <Link to='/register'>

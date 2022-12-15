@@ -5,6 +5,7 @@ import { Tab } from '@headlessui/react'
 import ImageDog from '../../assets/land-stream-galu.png'
 import { PlayCircleIcon } from '@heroicons/react/24/outline'
 import Nav2 from '../../components/navbar/Nav2'
+import Footer from '../../components/footer/footer'
 function classNames (...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -78,6 +79,7 @@ export default function Stream () {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
