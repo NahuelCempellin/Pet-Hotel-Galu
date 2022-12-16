@@ -33,8 +33,8 @@ export default function Nav2(){
             <Link to='/register'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Calendario</p>
             </Link>
-            <button className="w-8 h-8  flex items-center justify-center" onClick={()=>setPopup(!popup)} >
-            { theme=== false? <MdNotifications className={`${popup?'text-zinc-50': 'text-orange-500'} text-2xl`} /> : <MdNotifications className={`${popup?'text-blue-900' : 'text-orange-500'} text-2xl`}/>}
+            <button className="w-8 h-8  flex items-center justify-center">
+            { theme=== false? <MdNotifications className={`${!popup?'text-zinc-50': 'text-orange-500'} text-2xl`}  onClick={()=>setPopup(!popup)} /> : <MdNotifications className={`${!popup?'text-blue-900' : 'text-orange-500'} text-2xl`} onClick={()=>setPopup(!popup)}/>}
             <PopUp popup={popup}/>
             </button>
             </div>
