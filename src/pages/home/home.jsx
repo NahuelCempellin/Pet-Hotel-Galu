@@ -22,11 +22,13 @@ export default function Home(){
                 <NavResponsive/>
             </div>
             <div className="flex flex-col border-t border-orange-500">
-            <h1 className={`text-4xl mt-10 ml-10 ${theme? "text-blue-900" : "text-zinc-50"}`}>Bienvenido!</h1>
-            <p className={`text-sm w-1/2 ml-10 text-orange-500 ${theme? "text-blue-900" : "text-zinc-50"}`}>"No importa lo que hagas o como le trates, el amor de los perros es infinito, su cariño es inmenso y su fidelidad es incondicional."</p>
+                <div className="max-[700px]:flex flex-col items-center ">
+                <h1 className={`text-4xl mt-10 ml-10 ${theme? "text-blue-900" : "text-zinc-50"} max-[700px]:ml-0 max-[700px]:mb-3 `}>Bienvenido!</h1>
+                <p className={`text-sm w-1/2 ml-10 text-orange-500 ${theme? "text-blue-900" : "text-zinc-50"} border border-transparent max-[700px]:w-3/4 max-[700px]:ml-0`}>"No importa lo que hagas o como le trates, el amor de los perros es infinito, su cariño es inmenso y su fidelidad es incondicional."</p>
+                </div>
             </div>
 
-            <div className="flex p-5 items-center justify-around max-[700px]:flex-col max-[700px]:h-[90em]">
+            <div className="flex p-5 items-center justify-around max-[700px]:flex-col max-[700px]:h-[70em]">
                 <ReservasCard/>
                 <StreamCard/>
             </div>

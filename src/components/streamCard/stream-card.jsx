@@ -35,7 +35,7 @@ export default function StreamCard(){
         },
     ]
     return(
-        <div className="flex flex-col items-center justify-center w-1/2 mt-[-80px]">
+        <div className="flex flex-col items-center justify-center w-1/2 mt-[-80px] max-[700px]:w-full">
         <h2 className={`mt-10 text-xl mb-4 ${theme? "text-blue-900" : "text-zinc-50"}`}>Ofertas de tiempo limitado!!</h2>
         <hr className={`w-1/4 border-1 ${theme? 'border-blue-900' : 'border-white' }`}/>
 

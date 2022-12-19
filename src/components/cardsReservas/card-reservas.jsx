@@ -47,7 +47,7 @@ export default function ReservasCard(){
     ]
     return(
       
-            <div className="flex flex-col items-center justify-center w-1/4">
+            <div className="flex flex-col items-center justify-center w-1/4 max-[700px]:w-full">
                 <h2 className={` text-xl mb-4 ${theme? "text-blue-900" : "text-zinc-50"}`}>Reservas que has realizado</h2>
                 <hr className={`border-1 ${theme?"border-blue-900" :"border-white"} w-3/4 mb-5`}/>
                     <div className={`overflow-y-auto w-60  h-80  ${theme? "text-blue-900" : "text-zinc-50"}`}>
