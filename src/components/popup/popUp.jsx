@@ -1,35 +1,47 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import {FaPaw} from 'react-icons/fa'
-import {AiOutlineClockCircle} from 'react-icons/ai'
-import {BiBomb} from 'react-icons/bi'
-import {BsCalendar2Date} from 'react-icons/bs'
+
 
 export default function PopUp({popup}){
     const {theme}= useSelector(state=> state)
+
+
+    const notificacion=[
+        {
+            titulo: 'Notificacion 1',
+            contenido: 'Su reserva se ha realizado correctamente!',
+            hora:'Hace 1 hora',
+
+        },
+        {
+            titulo: 'Notificacion 2',
+            contenido: 'Aproveche estas ofertas!',
+            hora:'Hace 2 horas',
+
+        },
+        {
+            titulo: 'Notificacion 3',
+            contenido: 'Su reserva se ha realizado correctamente!',
+            hora:'Hace 3 horas',
+        }
+    ]
     
 
     return(
-        <div className={` absolute text-white mt-[25.5rem]  border-b border-l shadow w-64 mr-64 h-96 ${theme ? "bg-sky-100" : "bg-gray-900"} ${theme ? "border-orange-500" : "border-white"} ${popup === true ? "flex flex-col items-center justify-around" : "hidden"}`}>
-            <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
-            <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Nombre de usuario </h2>
-            <FaPaw className={theme? "text-blue-900" : "text-zinc-50"}/>
-            </div>
-            <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
-            <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Reserva</h2>
-            <AiOutlineClockCircle className={theme? "text-blue-900" : "text-zinc-50"}/>
-            </div>
-            <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
-            <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Ofertas</h2>
-            <BiBomb className={theme? "text-blue-900" : "text-zinc-50"}/>
-            </div>
-            <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
-            <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Calendario</h2>
-            <BsCalendar2Date className={theme? "text-blue-900" : "text-zinc-50"}/>
-            </div>
-            <div className=" w-[80%] flex items-center p-2.5 flex items-center justify-center mt-3">
-            <button className="bg-orange-500 w-[80%] rounded-lg text-white p-3 flex items-center justify-evenly">Ver Stream <FaPaw/></button>
-            </div>
+        <div className={` absolute text-white mt-[20rem]  border-b border-l shadow w-64 mr-64 h-auto p-2 ${theme ? "bg-sky-100" : "bg-gray-900"} ${theme ? "border-orange-500" : "border-white"}  ${popup === true ? "flex flex-col items-center justify-around" : "hidden"}`}>
+            {
+                notificacion.map((el,i)=>{
+                    return(
+                        <div key={i} className={`w-full h-20 flex flex-col items-start pl-2  text-sm hover:bg-gray-700 mb-4 ${theme? "text-blue-900" : "text-zinc-50"}`}>
+                            {/* <p className="text-xs">{el.titulo}</p> */}
+                            <p className=" flex">{el.contenido}</p>
+                            <div className="w-full flex items-center justify-end border-b border-orange-500">
+                            <p className="text-xs">{el.hora}</p>
+                            </div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

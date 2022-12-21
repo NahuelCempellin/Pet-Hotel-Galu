@@ -16,11 +16,11 @@ export default function ThemeSwitch(){
     
     return(
         <div>
-            <button className="flex items-center p-1" onClick={()=>handlerChange()}>
+            <div className="flex items-center p-1" onClick={()=>handlerChange()}>
                 {
                     theme=== false? <BsMoonStarsFill className="text-orange-500 text-2xl"/> : <BsSun className="text-blue-900 text-2xl"/>
                 }
-            </button>
+            </div>
         </div>
     )
 }

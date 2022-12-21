@@ -27,7 +27,7 @@ export default function Nav2(){
             <Link to='/stream'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Stream</p>
             </Link>
-            <Link to='/register'>
+            <Link to='/reservas'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Reservas</p>
             </Link>
             <Link to='/register'>

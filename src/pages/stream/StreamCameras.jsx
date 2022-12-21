@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../../components/navbar/Navbar'
 import { useSelector } from 'react-redux'
 import { Tab } from '@headlessui/react'
 import ImageDog from '../../assets/land-stream-galu.png'
 import { PlayCircleIcon } from '@heroicons/react/24/outline'
 import Nav2 from '../../components/navbar/Nav2'
 import Footer from '../../components/footer/footer'
+import NavResponsive from '../../components/navbar/NavResponsive'
 function classNames (...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -24,7 +24,12 @@ export default function Stream () {
 
   return (
     <div className={`w-full h-full px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"}`}>
-      <Nav2/>
+      <div className="max-[1000px]:hidden">
+            <Nav2/>
+            </div>
+            <div className="min-[1000px]:hidden">
+                <NavResponsive/>
+            </div>
       {/* <Navbar/> */}
       <div className='w-[98%] h-full mx-auto '>
         {/* divide in sections */}
