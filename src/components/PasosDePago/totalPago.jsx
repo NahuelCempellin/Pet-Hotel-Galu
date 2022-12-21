@@ -6,16 +6,16 @@ import {BiBed} from 'react-icons/bi'
 export default function TotalPago(){
     const{theme}=useSelector(state=> state)
     return(
-        <div className={`${theme? "text-blue-900" : "text-zinc-50"} border w-[35%] flex flex-col h-[35rem] justify-around rounded-lg overflow-hidden`}>
+        <div className={`${theme? "text-blue-900" : "text-zinc-50"}  ${theme? 'border border-blue-900' : 'border'} w-[35%] flex flex-col h-[35rem] justify-around rounded-lg overflow-hidden`}>
 
-            <div className="border-b border-orange-500 bg-orange-500 h-48 mt-[-3rem] flex flex-col items-center justify-around">
+            <div className="border-b border-orange-500 bg-orange-500 h-48 mt-[-3rem] flex flex-col items-center justify-around text-white">
                 <div className="flex items-center w-[60%] justify-around mr-32">
                 <BiBed className="text-2xl"/>
                 <h1 className="text-2xl">Total Alojamiento:</h1>
                 </div>
                 <h1 className="text-4xl ml-48">$558.616</h1>
             </div>
-            <div className="border-b p-2 mt-[-3rem]">
+            <div className={`${theme? 'border-b border-blue-900' : 'border-b'} p-2 mt-[-3rem]`}>
             <h1>Desgloce de precio: </h1>
             <div className="w-full flex items-center justify-between p-2">
             <p>15 noches en 1 habitacion</p>
