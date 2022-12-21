@@ -23,7 +23,7 @@ export default function Reservas(){
                 <h1 className={`text-4xl mt-10 ml-10 ${theme? "text-blue-900" : "text-zinc-50"} max-[700px]:ml-0 max-[700px]:mb-3 `}>Reservas</h1>
                 </div>
 
-                <div className="flex w-[80%] items-center justify-between">
+                <div className="flex w-[90%] items-center justify-between mt-10">
                     <PasosDePago/>
                     <TotalPago/>
                 </div>
