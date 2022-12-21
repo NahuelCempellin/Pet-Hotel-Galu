@@ -8,17 +8,17 @@ export default function PasosDePago(){
         <div className={`${theme? "text-blue-900" : "text-zinc-50"} border rounded-lg w-[60%] h-[71vh] flex flex-col items-center justify-center`}>
             <div className="w-[70%] flex items-center justify-around p-4 border-b border-orange-500">
             <div className="flex flex-col items-center">
-            <div className="border w-[3rem] h-[3rem] flex items-center justify-center rounded-full">1</div>
+            <div className="border w-[3rem] h-[3rem] flex items-center justify-center rounded-full bg-orange-500">1</div>
             <p>Registro</p>
             </div>
              <hr className="w-[20%]"/>
             <div className="flex flex-col items-center">
-            <div className="border w-[3rem] h-[3rem] flex items-center justify-center rounded-full">2</div>
+            <div className="border w-[3rem] h-[3rem] flex items-center justify-center rounded-full hover:bg-orange-500">2</div>
             <p>Pagos</p>
             </div>
             <hr className="w-[20%]"/>
             <div className="flex flex-col items-center">
-            <div className="border w-[3rem] h-[3rem] flex items-center justify-center rounded-full">3</div>
+            <div className="border w-[3rem] h-[3rem] flex items-center justify-center rounded-full hover:bg-orange-500">3</div>
              <p>Resumen</p>
             </div>
 
