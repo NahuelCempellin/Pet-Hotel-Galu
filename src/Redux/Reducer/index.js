@@ -1,9 +1,10 @@
-import { SIGN_IN, SIGN_UP,THEME } from '../Actions/auth'
+import { SIGN_IN, SIGN_UP,STEP,THEME } from '../Actions/auth'
 const userLocal = JSON.parse(localStorage.getItem('user'))
 
 const initialState = {
   user: userLocal || {},
   theme: false,
+  step:'registro'
 }
 export default function rootReducer (state = initialState, action) {
   switch (action.type) {
@@ -24,6 +25,13 @@ export default function rootReducer (state = initialState, action) {
         ...state,
         theme: !state.theme
 
+      }
+    }
+
+    case STEP:{
+      return{
+        ...state,
+        step: action.payload
       }
     }
     default:

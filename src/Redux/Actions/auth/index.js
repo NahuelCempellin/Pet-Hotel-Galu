@@ -6,6 +6,7 @@ export const SIGN_OUT = 'SIGN_OUT'
 export const RECOVER_PASSWORD = 'RECOVER_PASSWORD'
 
 export const THEME='THEME'
+export const STEP='STEP'
 
 export function signUp (obj) {
   return (dispatch) => {
@@ -67,4 +68,14 @@ export function ThemeHandler(){
     })
   }
    
+}
+
+export function StepHandler(payload){
+  
+  return function (dispatch){
+    dispatch({
+      type: STEP,
+      payload: payload
+    })
+  }
 }

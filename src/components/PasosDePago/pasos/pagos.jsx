@@ -1,0 +1,81 @@
+import React, {useState} from 'react'
+import { useDispatch } from 'react-redux'
+import { StepHandler } from '../../../Redux/Actions/auth'
+import{BsFillCreditCard2BackFill , BsFillCreditCardFill} from 'react-icons/bs'
+
+
+
+const Pagos = () => {
+ 
+  const dispatch=useDispatch()
+  const[card,setCard]= useState('')
+
+ 
+
+  function HandlerStep(e){
+    dispatch(StepHandler(e))
+  }
+
+
+  return (
+    <div className='w-[100%] h-[100%] flex flex-col items-center justify-around mt-5'>
+
+      <div>
+        <p>Selecciona el metodo de pago que quieras utilizar:</p>
+
+        <div className='flex  justify-around mt-5'>
+          <button className={`w-[40%] ${card === 'debito'? 'bg-orange-500' : 'bg-transparent'} h-24 border p-1 flex flex-col items-center justify-around text-white`} onClick={()=>setCard('debito')}>
+            <BsFillCreditCard2BackFill className='text-4xl'/>
+            <p>Tarjeta de debito</p>
+          </button>
+          
+          <button className={`w-[40%] ${card === 'credito'? 'bg-orange-500' : 'bg-transparent'} h-24 border p-1 flex flex-col items-center justify-around text-white`} onClick={()=>setCard('credito')}>
+            <BsFillCreditCardFill className='text-4xl'/>
+            <p>Tarjeta de credito</p>
+          </button>
+        </div>
+      </div>
+
+      <div className='w-[100%] h-28 flex flex-col items-center justify-around'>
+      <div className='w-[75%] p-1 flex flex-col'>
+        <label>Tarjeta: </label>
+         
+         <select className='text-black'>
+          <option>Visa</option>
+          <option>Mastercard</option>
+          <option>American Express</option>
+         </select>
+      </div>
+      <div className='w-[100%] h-28 flex items-center justify-around p-1'>
+        <div className='flex flex-col w-[40%]'>
+          <label>Numero de tarjeta: </label>
+          <input placeholder='xxxx-xxxxx-xxxx' className='p-1 '/>
+          {/* <input placeholder='cvc'/> */}
+        </div>
+
+        <div className='flex flex-col w-[10%]'>
+          <label>CVC:</label>
+          <input className='p-1' placeholder='xxxx'/>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+      <div  className='w-[90%] flex items-center justify-between'>
+      <div>
+      <button className='p-2 rounded-lg bg-orange-500 w-20 text-white' onClick={()=>HandlerStep('registro')}>Atras</button>
+      </div>
+
+      <div>
+        <button className='p-2 rounded-lg bg-orange-500 w-20 text-white' onClick={()=>HandlerStep('resumen')}>Resumen</button>
+      </div>
+
+      </div>
+    </div>
+  )
+}
+
+export default Pagos
