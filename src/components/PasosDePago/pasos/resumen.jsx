@@ -49,6 +49,11 @@ const Resumen = () => {
         </div>
 
         <div className=' w-[100%] p-2 flex items-center justify-between'>
+          <label className='text-orange-500'>Tipo de habitacion:</label>
+          <p>Premium</p>
+        </div>
+
+        <div className=' w-[100%] p-2 flex items-center justify-between'>
           <label className='text-orange-500'>Tarjeta n°: </label>
           <p>XXXX-XXXX-XXXX-1123</p>
         </div>
