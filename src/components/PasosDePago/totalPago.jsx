@@ -6,9 +6,9 @@ import {BiBed} from 'react-icons/bi'
 export default function TotalPago(){
     const{theme}=useSelector(state=> state)
     return(
-        <div className={`${theme? "text-blue-900" : "text-zinc-50"}  ${theme? 'border border-blue-900' : 'border'} w-[35%] flex flex-col h-[35rem] justify-around rounded-lg overflow-hidden`}>
+        <div className={`${theme? "text-blue-900" : "text-zinc-50"}  ${theme? 'border border-blue-900' : 'border'} w-[35%] flex flex-col h-[80vh] justify-around rounded-lg overflow-hidden max-[1000px]:w-[80%]`}>
 
-            <div className="border-b border-orange-500 bg-orange-500 h-48 mt-[-3rem] flex flex-col items-center justify-around text-white">
+            <div className="border-b border-orange-500 bg-orange-500 h-48 mt-[-3rem] flex flex-col items-center justify-around text-white min-[2000px]:mt-[-10em]">
                 <div className="flex items-center w-[60%] justify-around mr-32">
                 <BiBed className="text-2xl"/>
                 <h1 className="text-2xl">Total Alojamiento:</h1>

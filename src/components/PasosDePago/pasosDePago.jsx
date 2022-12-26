@@ -9,8 +9,8 @@ export default function PasosDePago(){
     const{step}=useSelector(state=> state)
    
     return(
-        <div className={`${theme? "text-blue-900" : "text-zinc-50"} border rounded-lg w-[60%] h-[71vh] flex flex-col items-center justify-center`}>
-            <div className={"w-[70%] flex items-center justify-around p-4 border-b border-orange-500"}>
+        <div className={`${theme? "text-blue-900" : "text-zinc-50"} border rounded-lg w-[60%] h-[80vh] flex flex-col items-center justify-center max-[1000px]:w-[80%] max-[1000px]:h-[150vh] max-[1000px]:mb-[5em]`}>
+            <div className={"w-[70%] flex items-center justify-around p-4 border-b border-orange-500 max-[1000px]:w-[100%]"}>
             <div className="flex flex-col items-center">
             <div className={`border w-[3rem] h-[3rem] flex items-center justify-center rounded-full ${step=== 'registro'? 'bg-orange-500' : 'bg-transparent'}`}>1</div>
             <p>Registro</p>
@@ -26,7 +26,7 @@ export default function PasosDePago(){
              <p>Resumen</p>
             </div>
             </div>
-                <div className="w-[90%] h-[70%] mt-3">
+                <div className="w-[90%] h-[70%] mt-3 ">
                    <PasosContainer/>
                 </div>
         </div>

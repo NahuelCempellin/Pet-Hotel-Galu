@@ -37,7 +37,7 @@ const Pagos = () => {
       </div>
 
       <div className='w-[100%] h-28 flex flex-col items-center justify-around'>
-      <div className='w-[75%] p-1 flex flex-col'>
+      <div className='w-[75%] p-1 flex flex-col max-[1000px]:w-[100%]'>
         <label>Tarjeta: </label>
          
          <select className='text-black'>
@@ -46,14 +46,14 @@ const Pagos = () => {
           <option>American Express</option>
          </select>
       </div>
-      <div className='w-[100%] h-28 flex items-center justify-around p-1'>
-        <div className='flex flex-col w-[40%]'>
+      <div className='w-[100%] h-28 flex items-center justify-around p-1 max-[1000px]:flex-col max-[1000px]:h-32'>
+        <div className='flex flex-col w-[40%] max-[1000px]:w-[100%]'>
           <label>Numero de tarjeta: </label>
           <input placeholder='xxxx-xxxxx-xxxx' className='p-1 '/>
           {/* <input placeholder='cvc'/> */}
         </div>
 
-        <div className='flex flex-col w-[10%]'>
+        <div className='flex flex-col w-[10%] max-[1000px]:w-[100%]'>
           <label>CVC:</label>
           <input className='p-1' placeholder='xxxx'/>
         </div>
