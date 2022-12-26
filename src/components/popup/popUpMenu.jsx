@@ -27,19 +27,27 @@ export default function MenuResponsive({menu,setMenu}){
             </div>
             </div>
             <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
+            <Link to={'/home'}>
             <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Home </h2>
+            </Link>
             <HiHome className={theme? "text-blue-900" : "text-zinc-50"}/>
             </div>
             <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
+            <Link to='/stream'>
             <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Stream</h2>
+            </Link>
             <FaPlay className={theme? "text-blue-900" : "text-zinc-50"}/>
             </div>
             <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
+            <Link to='/reservas'>
             <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Reservas</h2>
+            </Link>   
             <BsBookmarkStarFill className={theme? "text-blue-900" : "text-zinc-50"}/>
             </div>
             <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
+            <Link to='calendario'>
             <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Calendario</h2>
+            </Link>
             <BsCalendar2Date className={theme? "text-blue-900" : "text-zinc-50"}/>
             </div>
             <div className=" w-[80%] flex items-center p-2.5 flex items-center justify-center mt-3">
