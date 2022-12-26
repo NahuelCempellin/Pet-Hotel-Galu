@@ -8,9 +8,9 @@ import Carrousel from "../../components/carrousel/carrolusel";
 export default function Landing(){
     const{theme}= useSelector(state=> state)
     return(
-        <div className={`w-screen h-screeen  ${theme ? "bg-sky-100" : "bg-gray-900"}`}>
+        <div className={`w-screen h-screeen min-[2000px]:h-[111vh] ${theme ? "bg-sky-100" : "bg-gray-900"}`}>
            <NavLogout/>
-            <div className="flex items-center justify-around  max-[600px]:mt-20">
+            <div className="flex items-center justify-around  max-[600px]:mt-20 min-[2000px]:h-[80vh]">
                 <div>
                     <div className="flex mt-20 max-[400px]:flex-col">
                     <h1 className="mr-2 font-bold text-7xl text-orange-500 min-[350px]:text-5xl">Hotel</h1>

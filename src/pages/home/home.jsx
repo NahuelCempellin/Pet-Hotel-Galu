@@ -14,7 +14,7 @@ export default function Home(){
 
     return(
       
-            <div className={`w-full  h-full px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"}`}>
+            <div className={`w-full  h-full min-[2000px]:h-[122vh] px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"}`}>
             <div className="max-[1000px]:hidden">
             <Nav2/>
             </div>
@@ -28,7 +28,7 @@ export default function Home(){
                 </div>
             </div>
 
-            <div className="flex p-5 items-center justify-around max-[700px]:flex-col max-[700px]:h-[70em]">
+            <div className="flex p-5 items-center justify-around max-[700px]:flex-col max-[700px]:h-[70em] min-[2000px]:h-[80vh]">
                 <ReservasCard/>
                 <StreamCard/>
             </div>

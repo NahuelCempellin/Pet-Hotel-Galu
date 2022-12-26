@@ -34,7 +34,7 @@ export default function Register () {
   }
   return (
     <>
-      <div className={`w-full h-full px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"}`}>
+      <div className={`w-full h-full px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"} min-[2000px]:h-[120vh]`}>
       <ToastContainer/>
       <NavLogout/>
         <div className="flex items-center content-center justify-center h-full flex-col">
@@ -177,8 +177,8 @@ export default function Register () {
               </div>
             </div>
           </div>
-        </div>
       <Footer/>
+        </div>
       </div>
     </>
   )

@@ -10,7 +10,7 @@ import TotalPago from "../../components/PasosDePago/totalPago";
 export default function Reservas(){
     const{theme}=useSelector(state=> state)
     return(
-        <div className={`w-full  h-full px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"} max-[1000px]:min-h-[300vh] min-[2000px]:h-[100vh]`}>
+        <div className={`w-full  h-full px-4 mx-auto ${theme ? "bg-sky-100" : "bg-gray-900"} max-[1000px]:min-h-[300vh] min-[2000px]:h-[105vh]`}>
         <div className="max-[1000px]:hidden">
             <Nav2/>
             </div>
