@@ -11,7 +11,7 @@ const PasosContainer = () => {
   
 
   return (
-    <div className='w-[100%] h-[100%] '>
+    <div className={`w-[100%] h-[100%]`}>
         {
           step === 'registro' ?
           <Registro setPaso={setPaso} paso={paso}/>

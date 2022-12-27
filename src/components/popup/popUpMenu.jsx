@@ -14,7 +14,7 @@ export default function MenuResponsive({menu,setMenu}){
     const{theme}=useSelector(state=> state)
 
     return(
-        <div className={` absolute text-white mt-[50rem]  border-b border-r shadow w-80 ml-[12em] h-[100vh] ${theme ? "bg-sky-100" : "bg-gray-900"} ${theme ? "border-orange-500" : "border-white"} ${menu === true ? "flex flex-col items-center justify-around" : "hidden"}`}>
+        <div className={` absolute text-white mt-[50rem]  border-b border-r shadow w-80 ml-[12em] h-[100vh] ${theme ? "bg-sky-100" : "bg-gray-900"} ${theme ? "border-orange-500" : "border-white"} ${menu === true ? "flex flex-col items-center justify-around" : "hidden"} z-10`}>
             <div className="w-[95%] flex items-center justify-between">
             <div className="h-16 w-24  ml-8 flex items-center">
                 <Link to={'/'}>
@@ -45,7 +45,7 @@ export default function MenuResponsive({menu,setMenu}){
             <BsBookmarkStarFill className={theme? "text-blue-900" : "text-zinc-50"}/>
             </div>
             <div className="border-b border-orange-500 w-[80%] flex items-center p-2.5">
-            <Link to='calendario'>
+            <Link to='/calendario'>
             <h2 className={`${theme? "text-blue-900" : "text-zinc-50"} text-lg p-1 `}>Calendario</h2>
             </Link>
             <BsCalendar2Date className={theme? "text-blue-900" : "text-zinc-50"}/>

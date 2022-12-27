@@ -7,6 +7,7 @@ import Stream from './pages/stream/StreamCameras'
 import Landing from './pages/landing/landingPage'
 import Home from './pages/home/home'
 import Reservas from './pages/reservas/reservas'
+import Calendario from './pages/calendario/calendario'
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/stream' element={<Stream />} />
+      <Route path='/calendario' element={<Calendario />} />
     </Routes>
   )
 }

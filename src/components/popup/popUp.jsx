@@ -28,7 +28,7 @@ export default function PopUp({popup}){
     
 
     return(
-        <div className={` absolute text-white mt-[20rem]  border-b border-l shadow w-64 mr-64 h-auto p-2 ${theme ? "bg-sky-100" : "bg-gray-900"} ${theme ? "border-orange-500" : "border-white"}  ${popup === true ? "flex flex-col items-center justify-around" : "hidden"}`}>
+        <div className={` absolute text-white mt-[20rem]  border-b border-l shadow w-64 mr-64 h-auto p-2 ${theme ? "bg-sky-100" : "bg-gray-900"} ${theme ? "border-orange-500" : "border-white"}  ${popup === true ? "flex flex-col items-center justify-around" : "hidden"} z-10`}>
             {
                 notificacion.map((el,i)=>{
                     return(

@@ -30,7 +30,7 @@ export default function Nav2(){
             <Link to='/reservas'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Reservas</p>
             </Link>
-            <Link to='/register'>
+            <Link to='/calendario'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Calendario</p>
             </Link>
             <button className="w-8 h-8  flex items-center justify-center">
