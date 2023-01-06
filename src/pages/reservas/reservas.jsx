@@ -23,9 +23,9 @@ export default function Reservas(){
                 <h1 className={`text-4xl mt-10 ml-10 ${theme? "text-blue-900" : "text-zinc-50"} max-[700px]:ml-0 max-[700px]:mb-3 `}>Reservas</h1>
                 </div>
 
-                <div className="flex w-[90%]  max-[1000px]:w-[120%]  max-[1000px]:justify-around items-center justify-between mt-10  max-[1000px]:flex-col max-[1000px]:min-h-[-320vh]">
+                <div className="flex w-[90%]  max-[1000px]:w-[120%]  max-[1000px]:justify-around items-center justify-center mt-10  max-[1000px]:flex-col max-[1000px]:min-h-[-320vh]">
                     <PasosDePago/>
-                    <TotalPago/>
+                    {/* <TotalPago/> */}
                 </div>
             </div>
             <Footer/>

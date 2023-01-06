@@ -16,13 +16,13 @@ export default function PasosDePago(){
             <p>Registro</p>
             </div>
              <hr className={`w-[20%] ${theme? "border-blue-900" : "border-white"}`}/>
-            <div className="flex flex-col items-center">
+            {/* <div className="flex flex-col items-center">
             <div className={`border w-[3rem] h-[3rem] flex items-center justify-center rounded-full ${step=== 'pagos'? 'bg-orange-500 text-white' : 'bg-transparent'} ${theme? 'border border-blue-900' : 'border'}`}>2</div>
             <p>Pagos</p>
             </div>
-            <hr className={`w-[20%] ${theme? "border-blue-900" : "border-white"}`}/>
+            <hr className={`w-[20%] ${theme? "border-blue-900" : "border-white"}`}/> */}
             <div className="flex flex-col items-center">
-            <div className={`border w-[3rem] h-[3rem] flex items-center justify-center rounded-full ${step=== 'resumen'? 'bg-orange-500 text-white' : 'bg-transparent'} ${theme? 'border border-blue-900' : 'border'}`}>3</div>
+            <div className={`border w-[3rem] h-[3rem] flex items-center justify-center rounded-full ${step=== 'resumen'? 'bg-orange-500 text-white' : 'bg-transparent'} ${theme? 'border border-blue-900' : 'border'}`}>2</div>
              <p>Resumen</p>
             </div>
             </div>

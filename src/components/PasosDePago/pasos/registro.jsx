@@ -103,7 +103,7 @@ const Registro = () => {
       
       </div>
       <div className='w-[90%] flex items-center justify-end mt-[-3em] max-[1000px]:mt-[5em]'>
-        <button className='p-2 rounded-lg bg-orange-500 w-20 text-white' onClick={()=>HandlerStep('pagos')}>Pagos</button>
+        {/* <button className='p-2 rounded-lg bg-orange-500 w-20 text-white' onClick={()=>HandlerStep('pagos')}>Pagos</button> */}
       </div>
     </div>
 
