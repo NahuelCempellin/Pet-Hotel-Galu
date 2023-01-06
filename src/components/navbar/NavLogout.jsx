@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/galu-logo.png'
-import DLogo from '../../assets/GaluDarkTh.png'
+import DLogo from '../../assets/GALUNARANJA.png'
 import ThemeSwitch from "./theme";
 
 export default function NavLogout(){
@@ -18,7 +18,7 @@ export default function NavLogout(){
             
             <div className="w-1/4 flex justify-around mr-8 max-[700px]:w-full" >
             <ThemeSwitch/>
-            <Link to='/login'>
+            <Link to='/'>
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Ingresar</p>
             </Link>
             <Link to='/register'>

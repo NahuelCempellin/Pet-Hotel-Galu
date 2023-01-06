@@ -12,10 +12,10 @@ import Calendario from './pages/calendario/calendario'
 function App () {
   return (
     <Routes>
-      <Route path='/' element={<Landing />} />
+      {/* <Route path='/' element={<Landing />} /> */}
       <Route path='/home' element={<Home/>} />
       <Route path='/reservas' element={<Reservas/>} />
-      <Route path='/login' element={<Login />} />
+      <Route path='/' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/stream' element={<Stream />} />
       <Route path='/calendario' element={<Calendario />} />
