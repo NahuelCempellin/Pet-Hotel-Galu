@@ -43,9 +43,9 @@ export default function StreamCard(){
             {
                 ofertas.map((oferta,i)=>{
                     return(
-                        <div key={i} className={`border-b border-t ${theme? "border-blue-900" : "border-orange-500"} w-full mt-3 mb-3 p-4`}>
+                        <div key={i} className={`border-b border-t ${theme? "border-blue-900" : "border-[#ec6906]"} w-full mt-3 mb-3 p-4`}>
                             <div>
-                            <h2 className="text-orange-500 text-xl mt-3">{oferta.Oferta}</h2>
+                            <h2 className="text-[#ec6906] text-xl mt-3">{oferta.Oferta}</h2>
                             </div>
                             <p>{oferta.Habitacion}</p>
                             <div className="flex  w-96 items-center justify-around">
@@ -53,11 +53,11 @@ export default function StreamCard(){
                             <p>Hasta: {oferta.Hasta}</p>
                             </div>
                             <div className={`w-full border-t ${theme?"border-blue-900":"border-white"} p-4 mt-2 flex items-center justify-end`}>
-                            <p className="text-orange-500 text-xl">{oferta.precio}</p>
+                            <p className="text-[#ec6906] text-xl">{oferta.precio}</p>
                             </div>
 
                             <div className={`mb-2 mt-2 flex items-center  justify-end border-t ${theme?"border-blue-900":"border-white"} p-2`}>
-                                <button className={`bg-orange-500 text-white px-2 rounded-lg`}>Reservar</button>
+                                <button className={`bg-[#ec6906] text-white px-2 rounded-lg`}>Reservar</button>
                             </div>
                         </div>
                     )

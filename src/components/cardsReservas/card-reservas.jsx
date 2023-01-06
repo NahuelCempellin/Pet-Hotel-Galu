@@ -54,11 +54,11 @@ export default function ReservasCard(){
                         {
                             reserva.map((res,i)=> {
                                 return(
-                                    <div key={i} className={'border-t border-b border-orange-500 shadow p-1 flex flex-col mb-1 mt-1'}>
+                                    <div key={i} className={'border-t border-b border-[#ec6906] shadow p-1 flex flex-col mb-1 mt-1'}>
                                         <h3 className="">{res.titulo}</h3>
                                         <div className="flex items-center justify-around">
                                         <p>{res.nombre_mascota}</p>
-                                        <p className="flex items-center justify-center text-orange-500">Habitacion: {res.habitacion}</p>
+                                        <p className="flex items-center justify-center text-[#ec6906]]">Habitacion: {res.habitacion}</p>
                                         </div>
                                         <div className={`flex items-center border-t ${theme? 'border-blue-900' : "border-white"} mt-1 p-1 justify-center`}>
                                         <p className="text-sm">{`${res.fecha_ingreso} - ${res.fecha_salida}` }</p>
@@ -69,7 +69,7 @@ export default function ReservasCard(){
                         }
                     </div>
                     <div className="mt-3 w-60 flex justify-end">
-                        <button className="p-2 text-white bg-orange-500 rounded-lg">ver mas reservas</button>
+                        <button className="p-2 text-white bg-[#ec6906] rounded-lg">ver mas reservas</button>
                     </div>
                     
             </div>

@@ -18,7 +18,7 @@ export default function ThemeSwitch(){
         <div>
             <div className="flex items-center p-1" onClick={()=>handlerChange()}>
                 {
-                    theme=== false? <BsMoonStarsFill className="text-orange-500 text-2xl"/> : <BsSun className="text-blue-900 text-2xl"/>
+                    theme=== false? <BsMoonStarsFill className="text-[#ec6906] text-2xl"/> : <BsSun className="text-blue-900 text-2xl"/>
                 }
             </div>
         </div>

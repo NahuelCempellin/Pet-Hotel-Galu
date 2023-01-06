@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/galu-logo.png'
+import DLogo from '../../assets/GALUNARANJA.png'
 import{MdNotifications} from 'react-icons/md'
 import ThemeSwitch from "./theme";
 import PopUp from "../popup/popUp";
@@ -14,7 +15,7 @@ export default function Nav2(){
         <div className="border-red-800 flex w-full items-center justify-between p-3">
             <div className="h-16 w-32  ml-8">
                 <Link to={'/'}>
-                <img  alt="galu" src={Logo} className='w-full'/>
+                <img  alt="galu" src={theme? Logo : DLogo} className='w-full'/>
                 </Link>
             </div>
 
@@ -34,7 +35,7 @@ export default function Nav2(){
             <p className={theme? "text-blue-900" : "text-zinc-50"}>Calendario</p>
             </Link>
             <button className="w-8 h-8  flex items-center justify-center">
-            { theme=== false? <MdNotifications className={`${!popup?'text-zinc-50': 'text-orange-500'} text-2xl`}  onClick={()=>setPopup(!popup)} /> : <MdNotifications className={`${!popup?'text-blue-900' : 'text-orange-500'} text-2xl`} onClick={()=>setPopup(!popup)}/>}
+            { theme=== false? <MdNotifications className={`${!popup?'text-zinc-50': 'text-[#ec6906]'} text-2xl`}  onClick={()=>setPopup(!popup)} /> : <MdNotifications className={`${!popup?'text-blue-900' : 'text-orange-500'} text-2xl`} onClick={()=>setPopup(!popup)}/>}
             <PopUp popup={popup}/>
             </button>
             </div>

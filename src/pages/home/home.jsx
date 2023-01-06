@@ -21,10 +21,10 @@ export default function Home(){
             <div className="min-[1000px]:hidden">
                 <NavResponsive/>
             </div>
-            <div className="flex flex-col border-t border-orange-500">
+            <div className="flex flex-col border-t border-[#ec6906]">
                 <div className="max-[700px]:flex flex-col items-center ">
                 <h1 className={`text-4xl mt-10 ml-10 ${theme? "text-blue-900" : "text-zinc-50"} max-[700px]:ml-0 max-[700px]:mb-3 `}>Bienvenido!</h1>
-                <p className={`text-sm w-1/2 ml-10 text-orange-500 ${theme? "text-blue-900" : "text-zinc-50"} border border-transparent max-[700px]:w-3/4 max-[700px]:ml-0`}>"No importa lo que hagas o como le trates, el amor de los perros es infinito, su cariño es inmenso y su fidelidad es incondicional."</p>
+                <p className={`text-sm w-1/2 ml-10 text-[#ec6906] ${theme? "text-blue-900" : "text-zinc-50"} border border-transparent max-[700px]:w-3/4 max-[700px]:ml-0`}>"No importa lo que hagas o como le trates, el amor de los perros es infinito, su cariño es inmenso y su fidelidad es incondicional."</p>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ export default function Home(){
                 <StreamCard/>
             </div>
             <div className="flex justify-end w-full">
-                <button className="bg-orange-500 text-white w-60 rounded-lg flex items-center justify-center p-4">Ver Stream <FaPaw className="ml-3"/></button>
+                <button className="bg-[#ec6906] text-white w-60 rounded-lg flex items-center justify-center p-4">Ver Stream <FaPaw className="ml-3"/></button>
             </div>
             <Footer/>
             </div>

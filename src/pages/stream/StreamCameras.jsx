@@ -36,17 +36,17 @@ export default function Stream () {
         <div className='w-full h-5/6  flex flex-col md:flex-row justify-center items-center  md:mt-3 border-t border-b border-orange-500 shadow-xl'>
           <div className='w-1/2 flex flex-col justify-evenly items-center'>
             <div className='w-full h-1/2 flex flex-col justify-center items-center text-center mt-16'>
-              <h1 className='text-4xl text-orange-500 font-[900]'>
+              <h1 className='text-4xl text-[#ec6906] font-[900]'>
                 Mira a tus mascotas desde cualquier lugar
               </h1>
               <p className={`text-xl ${theme? "text-blue-900" : "text-zinc-50"} m-3`}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo excepturi numquam itaque iste at aspernatur libero, tenetur sit, ea blanditiis, vitae possimus repudiandae earum velit? Dignissimos laborum at iure!
               </p>
               <div className='flex justify-center items-center w-full h-1/2 mt-5'>
-                <button className='bg-none border-2 border-orange-500 rounded-full h-[50px]' onClick={() => handleScrollToBottom()}>
+                <button className='bg-none border-2 border-[#ec6906] rounded-full h-[50px]' onClick={() => handleScrollToBottom()}>
                   <p className={`m-3 font-bold ${theme? "text-blue-900" : "text-zinc-50"} flex flex-row justify-center items-center`}>
                     Miralos ahora <span>
-                      <PlayCircleIcon className='h-6 w-6 ml-2 text-orange-500' />
+                      <PlayCircleIcon className='h-6 w-6 ml-2 text-[#ec6906]' />
                     </span>
                   </p>
                 </button>
@@ -72,7 +72,7 @@ export default function Stream () {
                         'focus:outline-none',
                         selected
                           ? `bg-blue-900 text-zinc-50 font-bold text-2xl`
-                          : theme?"text-blue-900 bg-orange-500 font-bold text-2xl" : "text-zinc-50  font-bold text-2xl"
+                          : theme?"text-blue-900 bg-[#ec6906] font-bold text-2xl" : "text-zinc-50  font-bold text-2xl"
                       )
                     }
                   >
